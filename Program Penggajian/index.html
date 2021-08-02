@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Program Penggajian</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Program Penggajian</h1>
+        <form onsubmit="return false" class="mb-sm-2">
+            <!-- input -->
+            <div class="mb-sm-1">
+                <label class="col-sm-2">Nama Pegawai</label>
+                <label>:</label>
+                <input class="col-sm-3" id="Nama" type="text" placeholder="Masukkan Nama Pegawai" required>
+            </div>
+            <div class="mb-sm-1">
+                <label class="col-sm-2">Jam Kerja</label>
+                <label>:</label>
+                <input class="col-sm-3" id="JamKerja" type="number" placeholder="Masukkan Jam Kerja" required>
+            </div>
+            <div class="mb-sm-1">
+                <label class="col-sm-2">Upah perJam</label>
+                <label>:</label>
+                <input class="col-sm-3" id="PerJam" type="number" placeholder="Masukkan Upah per Jam" required>
+            </div>
+            <div class="mb-sm-1">
+                <label class="col-sm-2">Anak</label>
+                <label>:</label>
+                <input class="col-sm-3" id="Anak" type="number" placeholder="Masukkan Jumlah Anak" required>
+            </div>
+            <div class="mb-sm-1">
+                <label class="col-sm-2">Gaji</label>
+                <label>:</label>
+                <input class="col-sm-3" id="Gaji" type="text" placeholder="Gaji" disabled>
+            </div>
+            <div class="mb-sm-1">
+                <label class="col-sm-2">Tunjangan Anak</label>
+                <!--10%-->
+                <label>:</label>
+                <input class="col-sm-3" id="TunjanganAnak" type="text" placeholder="Jumlah Tunjangan Anak" disabled>
+            </div>
+            <div class="mb-sm-1">
+                <label class="col-sm-2">Total Gaji</label>
+                <!--10%-->
+                <label>:</label>
+                <input class="col-sm-3" id="TotalGaji" type="text" placeholder="Total Gaji" disabled>
+            </div>
+            <button class="btn btn-success" type="submit" onclick="proses()">Proses</button>
+            <button class="btn btn-danger" type="reset">Reset</button>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="function.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
